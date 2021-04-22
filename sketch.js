@@ -20,7 +20,7 @@ function setup() {
   dog.scale = 0.4;
   database = firebase.database();
  // foodStock = database.ref();
-  database.ref('food').on("value",readStock);
+  database.ref('Food').on("value",readStock);
 
   feed = createButton("Feed the dog");
   feed.position(700,95);
